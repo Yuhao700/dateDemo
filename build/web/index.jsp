@@ -16,11 +16,15 @@
         Date today = new Date();
         SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy");
         String FormatDate = dateFormat.format(today);
+        
+        SimpleDateFormat dateFormatUS = new SimpleDateFormat("MM/dd/yyyy");
+        String FormatDateUS = dateFormatUS.format(today);
      %>
     <body>
         <h1>Hello World!</h1>
         <p> Today is:<%= today %>
         <p> Today is:<%= FormatDate %>
+        <p> Today is:<%= FormatDateUS %>
     </body>
  
 </html>
